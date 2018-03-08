@@ -11,7 +11,7 @@
 
                                     <div class="front-intro" itemprop="articleBody">
 
-										<h1>Come Aboard!  We're Expecting You!</h1>
+										<h1>Ben Goldman - Creative Adventurer</h1>
 
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio aenean sed adipiscing diam donec. Mi proin sed libero enim. Molestie at elementum eu facilisis sed odio morbi. Quisque egestas diam in arcu cursus euismod quis viverra. Duis at consectetur lorem donec massa. Ultrices neque ornare aenean euismod elementum nisi. Dolor sit amet consectetur adipiscing elit pellentesque. Habitant morbi tristique senectus et netus et malesuada. Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Enim sed faucibus turpis in eu. Sed euismod nisi porta lorem mollis aliquam. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Odio eu feugiat pretium nibh ipsum consequat nisl. Enim blandit volutpat maecenas volutpat blandit aliquam. In hac habitasse platea dictumst. Imperdiet dui accumsan sit amet nulla facilisi morbi.
 	</p>
