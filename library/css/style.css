@@ -1253,7 +1253,7 @@ body {
   font-size: 100%;
   line-height: 1.5;
   color: #5c6b80;
-  background: #d5edf8;
+  background: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -1391,7 +1391,7 @@ HEADER STYLES
 #logo {
   margin: 0.75em 0; }
   #logo a {
-    color: #fff; }
+    color: #323944; }
 
 /*********************
 NAVIGATION STYLES
@@ -1619,6 +1619,8 @@ Pages
 *********************/
 #inner-content {
   background: #f8f9fa;
+  background-image: url("http://localhost:8888/portfolio/wp-content/uploads/2018/02/headshot_2.jpg");
+  background-size: cover;
   padding: 25px;
   -webkit-box-shadow: 3px 12px 25px -1px;
           box-shadow: 3px 12px 25px -1px; }
