@@ -1362,22 +1362,12 @@ h5, .h5 {
 /*********************
 HEADER STYLES
 *********************/
-.home .parallax, .blog .parallax {
-  background-image: url("http://localhost:8888/kayak/wp-content/uploads/2018/04/grilled-noise.png");
+.blog .parallax {
   height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
-
-.home .header {
-  background-image: url("http://localhost:8888/kayak/wp-content/uploads/2018/02/pexels-photo-696039.jpeg");
-  background-size: cover;
-  height: 400px;
-  border: #0c3f81 solid 0.125rem; }
-  @media all and (min-width: 1240px) {
-    .home .header {
-      height: 600px; } }
 
 .blog header.header {
   background-image: url("http://localhost:8888/kayak/wp-content/uploads/2018/02/pexels-photo-461595.jpeg");
@@ -1577,6 +1567,141 @@ Homepage
   height: auto;
   border: #024959 solid 1px; }
 
+body {
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial; }
+
+.separator {
+  margin-top: 40px; }
+
+/* 3D Cube */
+.space3d {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  display: inline-block; }
+
+._3dbox {
+  display: inline-block;
+  -webkit-transition: all 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateX(-15deg) rotateY(15deg);
+          transform: rotateX(-15deg) rotateY(15deg); }
+
+._3dface {
+  overflow: hidden;
+  position: absolute;
+  border: 1px solid #888;
+  background: #FFF;
+  -webkit-box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.1), 0 0 50px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.1), 0 0 50px rgba(0, 0, 0, 0.3);
+  color: #333;
+  line-height: 250px;
+  opacity: 0.8; }
+  ._3dface a {
+    display: block;
+    width: 100%;
+    height: 100%; }
+  ._3dface span {
+    font-size: 40px;
+    position: absolute;
+    top: 80px;
+    color: #d5edf8; }
+
+._3dface--front {
+  width: 250px;
+  height: 250px;
+  -webkit-transform: translate3d(0, 0, 125px);
+          transform: translate3d(0, 0, 125px); }
+
+._3dface--top {
+  width: 250px;
+  height: 250px;
+  -webkit-transform: rotateX(90deg) translate3d(0, 0, 125px);
+          transform: rotateX(90deg) translate3d(0, 0, 125px); }
+
+._3dface--bottom {
+  width: 250px;
+  height: 250px;
+  -webkit-transform: rotateX(-90deg) translate3d(0, 0, 125px);
+          transform: rotateX(-90deg) translate3d(0, 0, 125px); }
+
+._3dface--left {
+  width: 250px;
+  height: 250px;
+  left: 50%;
+  margin-left: -125px;
+  -webkit-transform: rotateY(-90deg) translate3d(0, 0, 125px);
+          transform: rotateY(-90deg) translate3d(0, 0, 125px); }
+
+._3dface--right {
+  width: 250px;
+  height: 250px;
+  left: 50%;
+  margin-left: -125px;
+  -webkit-transform: rotateY(90deg) translate3d(0, 0, 125px);
+          transform: rotateY(90deg) translate3d(0, 0, 125px); }
+
+._3dface--back {
+  width: 250px;
+  height: 250px;
+  -webkit-transform: rotateY(180deg) translate3d(0, 0, 125px);
+          transform: rotateY(180deg) translate3d(0, 0, 125px); }
+
+#radio-left:checked ~ .space3d ._3dbox {
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg); }
+
+#radio-right:checked ~ .space3d ._3dbox {
+  -webkit-transform: rotateY(-90deg);
+          transform: rotateY(-90deg); }
+
+#radio-bottom:checked ~ .space3d ._3dbox {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg); }
+
+#radio-top:checked ~ .space3d ._3dbox {
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg); }
+
+#radio-back:checked ~ .space3d ._3dbox {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg); }
+
+._3dface--front {
+  background: url(http://localhost:8888/portfolio/wp-content/uploads/2018/02/headshot_2.jpg);
+  background-size: 100%; }
+
+._3dface--top {
+  background: url(http://localhost:8888/portfolio/wp-content/uploads/2018/02/headshot1.jpg);
+  background-size: auto 100%; }
+
+._3dface--bottom {
+  background: url(http://localhost:8888/portfolio/wp-content/uploads/2018/02/headshot_2.jpg);
+  background-size: auto 100%; }
+
+._3dface--left {
+  background: url(http://localhost:8888/portfolio/wp-content/uploads/2018/02/headshot1.jpg);
+  background-size: auto 100%; }
+
+._3dface--right {
+  background: url(http://localhost:8888/portfolio/wp-content/uploads/2018/02/headshot_2.jpg);
+  background-size: auto 100%; }
+
+._3dface--back {
+  background: url(http://localhost:8888/portfolio/wp-content/uploads/2018/02/headshot1.jpg);
+  background-size: auto 100%; }
+
 /********************
 Blog
 *********************/
@@ -1617,19 +1742,37 @@ Blog
 /********************
 Pages
 *********************/
-#inner-content {
-  background: #f8f9fa;
-  background-image: url("http://localhost:8888/portfolio/wp-content/uploads/2018/02/headshot_2.jpg");
-  background-size: cover;
-  padding: 25px;
-  -webkit-box-shadow: 3px 12px 25px -1px;
-          box-shadow: 3px 12px 25px -1px; }
+.skillz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 25px;
+  margin: 0; }
+  .skillz li span {
+    padding-left: 0.5rem; }
 
+/*#inner-content {
+	background: $light-gray;
+	background-image: url("http://localhost:8888/portfolio/wp-content/uploads/2018/02/headshot_2.jpg");
+	background-size: cover;
+	padding: 25px;
+	box-shadow: 3px 12px 25px -1px; 
+} */
 /*********************
 POSTS & CONTENT STYLES
 *********************/
 #content {
-  margin-top: 3rem;
   margin-bottom: 3rem; }
 
 .big-title {
@@ -2149,6 +2292,16 @@ you can add resource intensive styles.
   /*********************
   HEADER STYLES
   *********************/
+  .skillz {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .skillz li {
+      padding-right: 2.500rem; }
+      .skillz li span {
+        padding-left: 2.500rem; }
+
   /*********************
   NAVIGATION STYLES
   *********************/
@@ -2358,7 +2511,66 @@ you can add resource intensive styles.
     the footer.
     */ }
 
-  /* end .footer-links */ }
+  /* end .footer-links */
+  body {
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial; }
+
+  /* 3D Cube */
+  .separator {
+    margin-top: 40px; }
+
+  .space3d {
+    width: 400px;
+    height: 400px;
+    padding-top: 5px;
+    margin-right: 50px; }
+
+  ._3dface {
+    line-height: 400px; }
+    ._3dface span {
+      font-size: 60px;
+      top: 150px; }
+
+  ._3dface--front {
+    width: 400px;
+    height: 400px;
+    -webkit-transform: translate3d(0, 0, 200px);
+            transform: translate3d(0, 0, 200px); }
+
+  ._3dface--top {
+    width: 400px;
+    height: 400px;
+    -webkit-transform: rotateX(90deg) translate3d(0, 0, 200px);
+            transform: rotateX(90deg) translate3d(0, 0, 200px); }
+
+  ._3dface--bottom {
+    width: 400px;
+    height: 400px;
+    -webkit-transform: rotateX(-90deg) translate3d(0, 0, 200px);
+            transform: rotateX(-90deg) translate3d(0, 0, 200px); }
+
+  ._3dface--left {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    -webkit-transform: rotateY(-90deg) translate3d(0, 0, 200px);
+            transform: rotateY(-90deg) translate3d(0, 0, 200px); }
+
+  ._3dface--right {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    -webkit-transform: rotateY(90deg) translate3d(0, 0, 200px);
+            transform: rotateY(90deg) translate3d(0, 0, 200px); }
+
+  ._3dface--back {
+    width: 400px;
+    height: 400px;
+    -webkit-transform: rotateY(180deg) translate3d(0, 0, 200px);
+            transform: rotateY(180deg) translate3d(0, 0, 200px); } }
 /*********************
 DESKTOP
 This is the average viewing window. So Desktops, Laptops, and
@@ -2453,65 +2665,3 @@ Feel free to customize this. Remember to add things that won't make
 sense to print at the bottom. Things like nav, ads, and forms should
 be set to display none.
 *********************/
-@media print {
-  /******************************************************************
-  Site Name:
-  Author:
-  
-  Stylesheet: Print Stylesheet
-  
-  This is the print stylesheet. There's probably not a lot
-  of reasons to edit this stylesheet. If you want to
-  though, go for it.
-  
-  ******************************************************************/
-  * {
-    background: transparent !important;
-    color: black !important;
-    text-shadow: none !important;
-    -webkit-filter: none !important;
-            filter: none !important;
-    -ms-filter: none !important; }
-
-  a, a:visited {
-    color: #444 !important;
-    text-decoration: underline; }
-    a:after, a:visited:after {
-      content: " (" attr(href) ")"; }
-    a abbr[title]:after, a:visited abbr[title]:after {
-      content: " (" attr(title) ")"; }
-
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: ""; }
-
-  pre, blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid; }
-
-  thead {
-    display: table-header-group; }
-
-  tr, img {
-    page-break-inside: avoid; }
-
-  img {
-    max-width: 100% !important; }
-
-  @page {
-    margin: 0.5cm; }
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3; }
-
-  h2,
-  h3 {
-    page-break-after: avoid; }
-
-  .sidebar,
-  .page-navigation,
-  .wp-prev-next,
-  .respond-form,
-  nav {
-    display: none; } }

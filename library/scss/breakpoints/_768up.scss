@@ -52,6 +52,16 @@ HEADER STYLES
 
 	#logo {}
 
+
+	.skillz {
+	flex-direction: row;
+
+	li {
+		padding-right: 2.500rem; 
+			span { padding-left: 2.500rem; }
+	}
+}
+
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -413,3 +423,79 @@ mobile. Make sure to double check these!
 	}
 } /* end .footer-links */
 
+
+
+// Front page rotating cube
+
+// toggle the cube dimensions here.
+
+body {
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial;
+}
+
+
+/* 3D Cube */
+
+.separator {
+	margin-top: 40px;
+  }
+
+.space3d {
+    width: $cubeWidth-full;
+    height: $cubeHeight-full;
+	padding-top: 5px;
+	margin-right: 50px
+}
+
+._3dface {
+  line-height: $cubeWidth-full;
+
+	span {
+		font-size: 60px;
+		top: 150px;
+  }
+}
+
+._3dface--front {
+	width: $cubeWidth-full;
+	height: $cubeHeight-full;
+	transform: translate3d(0, 0, $cubeDepth-full / 2);
+  
+  }
+  
+  ._3dface--top {
+	width: $cubeWidth-full;
+	height: $cubeDepth-full;
+	transform: rotateX(90deg) translate3d(0, 0, $cubeHeight-full / 2);
+  }
+  
+  ._3dface--bottom {
+	width: $cubeWidth-full;
+	height: $cubeDepth-full;
+	transform: rotateX(-90deg) translate3d(0, 0, $cubeHeight-full / 2);
+  }
+  
+  ._3dface--left {
+	width: $cubeDepth-full;
+	height: $cubeHeight-full;
+	margin-left: -$cubeDepth-full / 2;
+	transform: rotateY(-90deg) translate3d(0, 0, $cubeWidth-full / 2);
+  }
+  
+  
+  ._3dface--right {
+	width: $cubeDepth-full;
+	height: $cubeHeight-full;
+	margin-left: -$cubeDepth-full / 2;
+	transform: rotateY(90deg) translate3d(0, 0, $cubeWidth-full / 2);
+  }
+  
+  
+  ._3dface--back {
+	width: $cubeWidth-full;
+	height: $cubeHeight-full;
+	transform: rotateY(180deg) translate3d(0, 0, $cubeDepth-full / 2);
+  }

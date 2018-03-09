@@ -297,6 +297,13 @@ BLog
 /*********************
 HEADER STYLES
 *********************/
+.skillz {
+  flex-direction: row; }
+  .skillz li {
+    padding-right: 2.500rem; }
+    .skillz li span {
+      padding-left: 2.500rem; }
+
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -507,6 +514,60 @@ mobile. Make sure to double check these!
   */ }
 
 /* end .footer-links */
+body {
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial; }
+
+/* 3D Cube */
+.separator {
+  margin-top: 40px; }
+
+.space3d {
+  width: 400px;
+  height: 400px;
+  padding-top: 5px;
+  margin-right: 50px; }
+
+._3dface {
+  line-height: 400px; }
+  ._3dface span {
+    font-size: 60px;
+    top: 150px; }
+
+._3dface--front {
+  width: 400px;
+  height: 400px;
+  transform: translate3d(0, 0, 200px); }
+
+._3dface--top {
+  width: 400px;
+  height: 400px;
+  transform: rotateX(90deg) translate3d(0, 0, 200px); }
+
+._3dface--bottom {
+  width: 400px;
+  height: 400px;
+  transform: rotateX(-90deg) translate3d(0, 0, 200px); }
+
+._3dface--left {
+  width: 400px;
+  height: 400px;
+  margin-left: -200px;
+  transform: rotateY(-90deg) translate3d(0, 0, 200px); }
+
+._3dface--right {
+  width: 400px;
+  height: 400px;
+  margin-left: -200px;
+  transform: rotateY(90deg) translate3d(0, 0, 200px); }
+
+._3dface--back {
+  width: 400px;
+  height: 400px;
+  transform: rotateY(180deg) translate3d(0, 0, 200px); }
+
 /******************************************************************
 Site Name:
 Author:
