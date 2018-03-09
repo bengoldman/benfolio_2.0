@@ -45,15 +45,21 @@
 		<div id="container">
 
 			<header class="header parallax" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-			
-			<!-- //Mobile responsive nav -->
+				<div class="skillz-wrapper">
+					<ul class="skillz">
+						<li>Web Developer<span>&spades;</span></li>
+						<li>Blogger<span>&spades;</span></li>
+						<li>Actor</li>
+					</ul>
+				</div>
+			<!-- //Mobile responsive nav 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle box-shadow-menu">Menu</button>
 					<?php wp_nav_menu( array( 'theme_location' => 'main-nav', 'menu_class' => 'nav' ) ); ?>
 				</nav>
-			<!-- //End mobile nav -->
+			<!-- //End mobile nav 
 
-				<div id="inner-header" class="wrap cf">
+				<div id="inner-header" class="wrap cf"> -->
 
 					<!--<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<?php wp_nav_menu(array(
@@ -77,6 +83,7 @@
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
 
-				</div>
+				</div> 
+
 
 			</header>
